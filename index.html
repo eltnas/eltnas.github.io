@@ -4,14 +4,209 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Elton C. Nascimento</title>
-	<link rel="stylesheet" type="text/css" href="css/css.css" />
+	<link rel="stylesheet" type="text/css" href="./Assets/css/css.css" />
+
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-	<div class="container">
-		<div class="contruction">
-			
-		</div>
-	</div>
+	<header>
+		<!-- Navegação dos menus -->
+		<section class="menu">
+			<div class="perfil">
+				<div class="perfil-foto">
+					<img src="./Assets/img/elton_c_nascimento.jpg" />
+				</div>
+				<div class="perfil-sub">
+					<h1>Elton C. Nascimento</h1>
+					<h3>Engenheiro de Software</h3>
+					<div class="icons">
+						<ul class="nav-sociais">
+							<li class="github"><a href="https://github.com/eltnas"></a><i class="fa-brands fa-square-github"></i></a></li>
+							<li class="linkedin"><a href="https://www.linkedin.com/in/eltnas/"></a><i class="fa-brands fa-linkedin"></i></a></li>
+							<li class="instagram"><a href="https://www.instagram.com/elt.nas/"></a><i class="fa-brands fa-square-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<nav class="nav-menu">
+				<ul class="menu-container">
+					<li><a href="#Inicio">Inicio</a></li>
+					<li><a href="#Sobre">Sobre</a></li>
+					<li><a href="#Work">O que faço</a></li>
+					<li><a href="#Habilidades">Habilidades</a></li>
+					<li><a href="#Contato">Contato</a></li>
+				</ul>
+			</nav>
+
+			<!-- fim Navegação dos menus -->
+			<footer>
+				<p><span>&copy Elton C. Nascimento</span></p>
+			</footer>
+		</section>
+
+		<!-- content -->
+		<section class="content">
+			<!-- inicio -->
+			<section class="content-inicio" id="Inicio">
+				<div class="inicio-apres">
+                    <!-- TODO Colocar imagem -->
+					<div class="opaco"></div>
+					<div id="bkg1">
+						<h1>Web Developer</h1>
+						<p class="description">Criação de sites dinâmicos, com as melhores e mais atuais tecnologias do mercado!</p>
+					</div>
+
+					<div id="bkg2">
+						<h1 class="bkg2">Engenheiro de Software</h1>
+						<p class="description bkg2">Acesse a aba <a href="#Projetos">"Projetos"</a> para ver os projetos com que já trabalhei!</p>
+					</div>
+				</div>
+			</section>
+			<!-- inicio -->
+
+			<!-- sobre -->
+			<section class="content-sobre" id="Sobre">				
+				<div class="description">
+					<h4 class="sub">Sobre mim</h4>
+					<h2>Quem sou eu?</h2>
+					<p><span>Olá, sou Elton C. Nascimento</span>, sou Engenheiro de Sotware em formação, isso porque ainda estou me formando pela Unicesumar. Atualmente, crio sistemas com JavaScript e React, mas em um futuro proximo quero extender para novas tecnologias como Python e Ruby por exemplo.</p>
+					<div class="box-languages">
+						<div class="box">
+							<img src="./Assets/img/html5.png" />
+							<p>HTML5</p>							
+						</div>
+						<div class="box">
+							<img src="./Assets/img/css3.png" />
+							<p>CSS3</p>
+						</div>
+						<div class="box">
+							<img src="./Assets/img/javascript.png" />
+							<p>Javascript</p>
+						</div>						
+					</div>
+					<div class="box-info">
+						<h4>Sou imensamente grato por ter mais de 300 projetos concluidos!</h4>
+						<br />
+						<button><a href="#Inicio">Conheça</a></button>
+					</div>
+				</div>
+			</section>
+			<!-- sobre -->
+
+			<!-- O que faço -->
+			<section class="content-work" id="Work">
+				<div class="description">
+					<h4 class="sub">O que faço?</h4>
+					<h2>Aqui estão alguns dos serviços que ofereço</h2>
+					<div class="boxes">
+						<div class="box">
+							<img src="./Assets/img/ideia.jpg" alt="Ideias Inovadoras" />
+							<h1>Ideias Inovadoras</h1>
+							<p>Sempre exploro novas possibilidades e soluciono problemas existentes de maneira criativa e prática.</p>
+						</div>
+						<div class="box">
+							<img src="./Assets/img/bd.jpg" alt="Desenvolvimento de Software" />
+							<h1>Desenvolvimento de Sistemas</h1>
+							<p>Sempre pensando na usabilidade do software, para que seja efeiciente para o usuário.</p>
+						</div>
+						<div class="box">
+							<img src="./Assets/img/application.png" alt="Desenvolvimento de Aplicativos Moveis" />
+							<h1>Aplicativos Moveis</h1>
+							<p>Desenvolvimento de Apps de acordo com a nescessidade do seu negócio.</p>
+						</div>					
+					</div>
+					<div class="boxes">
+						<div class="box">
+							<img src="./Assets/img/design-grafico.png" alt="Criação de Layouts personalizados" />
+							<h1>Layouts Personalizados</h1>
+							<p>Sistemas desenvolvidos de acordo com a identidade do seu negócio.</p>
+						</div>
+						<div class="box">
+							<img src="./Assets/img/teste-software.jpg" alt="Teste de software" />
+							<h1>Teste de software</h1>
+							<p>Efetuo teste em seu software e gero relatórios sobre a qualidade e os riscos de falha.</p>
+						</div>
+						<div class="box">
+							<img src="./Assets/img/codigo.png" alt="Revisão de codigos" />
+							<h1>Revisão de Códigos</h1>
+							<p>Analiso o codigo desenvolvido, para identificar possiveis problemas/bugs.</p>
+						</div>					
+					</div>
+					<div class="box-info">
+						<h2>Projetos Criados: <span>360</span></h2>
+						<h2>Clientes Satifeitos: <span>115</span></h2>
+						<h2>Xicaras de Chá: <span>13141666</span></h2>
+					</div>
+				</div>
+			</section>
+			<!-- O que faço -->
+
+			<!-- habilidades -->
+			<section class="content-habilidades" id="Habilidades">
+				<div class="description">
+					<h4 class="sub">Habilidades</h4>
+					<h2>Minhas Habilidades</h2>
+					<p>Como profissional da area de desenvolvimento de sistemas, procuro sempre estar atualizado com as mais novas tecnologias. Atualmente, trabalho com Javascript, isso inclui tecnologias como React e Vue.</p>
+					<div class="boxes">
+						<div class="box pg-html">
+							<p>HTML5</p>
+							<div class="progress-bar"></div>
+						</div>
+						<div class="box pg-css">
+							<p>CSS3</p>
+							<div class="progress-bar"></div>
+						</div>
+					</div>
+					<div class="boxes">
+						<div class="box pg-javascript">
+							<p>JavaScript</p>
+							<div class="progress-bar"></div>
+						</div>
+						<div class="box pg-typescript">
+							<p>TypeScript</p>
+							<div class="progress-bar"></div>
+						</div>
+					</div>
+					<div class="boxes">
+						<div class="box pg-python">
+							<p>Python</p>
+							<div class="progress-bar"></div>
+						</div>
+						<div class="box pg-php">
+							<p>PHP</p>
+							<div class="progress-bar"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- habilidades -->
+
+			<!-- Contato -->
+			<section class="content-contato" id="Contato">
+				<div class="description">
+					<h4>Contato</h4>
+					<h2>Entre em contato</h2>
+					<p>Nesse momento estou atendendo apenas via Whatsapp ou telefone. Mas caso queira, também pode entrar em contato via Email.</p>
+
+					<div class="contacts">
+						<div class="contact-whatsapp"><a href="https://wa.me/5544998505518?text=Ol%C3%A1%2C+vem+pelo+seu+site.">
+							<img src="./Assets/img/wtp.webp" alt="WhatsApp" /><br /><h3>WhatsApp</h3></a>
+						</div>
+						<div class="contact-telefone">
+							<a href="tel:+5544998505518"><img src="./Assets/img/telefone.png" alt="Telefone" /><br /><h3>Telefone</h3></a>
+						</div>
+						<div class="contact-email">
+							<a href="mailto:eltnas@outlook.com"><img src="./Assets/img/email.png" alt="Email" /><br /><h3>Email</h3></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Contato -->
+		</section>
+		<!-- content -->
+	</header>
 
 </body>
 </html>
