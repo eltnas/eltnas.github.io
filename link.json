@@ -1,0 +1,57 @@
+[
+  {
+    "id" : "1",
+    "nome": "Caixa Eletrônico",
+    "link": "https://caixa-eletronico-sage.vercel.app/",
+    "github" : "https://github.com/eltnas/Caixa_eletronico.git",
+    "image": "./Assets/img/proj/Caixa_eletronico.webp"
+  },
+  {"id" : "2",
+    "nome": "Gorjeta",
+    "link": "https://calc-gorjetas.vercel.app/",
+    "github" : "https://github.com/eltnas/calc_gorjetas.git",
+    "image": "./Assets/img/proj/calc_gorjetas.webp"
+  },
+  {
+    "id" : "3",
+    "nome": "Culinária",
+    "link": "https://culinaria-seven.vercel.app/",
+    "github" : "https://github.com/eltnas/Culinaria.git",
+    "image": "./Assets/img/proj/Culinaria.webp"
+  },
+  {
+    "id" : "4",
+    "nome": "Galleria",
+    "link": "https://galleria-nu.vercel.app/",
+    "github" : "https://github.com/eltnas/Galleria.git",
+    "image": "./Assets/img/proj/Galleria.webp"
+  },
+  {
+    "id" : "5",
+    "nome": "Jokenpo",
+    "link": "https://rock-papper-scisor.vercel.app/",
+    "github" : "https://github.com/eltnas/Rock_papper_Scisor.git",
+    "image": "./Assets/img/proj/Jokenpo.webp"
+  },
+  {
+    "id" : "6",
+    "nome": "Marvel",
+    "link": "https://marvel-eltnas.vercel.app/",
+    "github" : "https://github.com/eltnas/Marvel.git",
+    "image": "./Assets/img/proj/Marvel.webp"
+  },
+  {
+    "id" : "7",
+    "nome": "Netflix",
+    "link": "https://netflix-clone-eltnas.vercel.app/",
+    "github" : "https://github.com/eltnas/netflix-clone.git",
+    "image": "./Assets/img/proj/netflix-clone.webp"
+  },
+  {
+    "id" : "8",
+    "nome": "Tic-Tac-Toe",
+    "link": "https://tic-tac-toe-eltnas.vercel.app/",
+    "github" : "https://github.com/eltnas/tic-tac-toe.git",
+    "image": "./Assets/img/proj/Tic-Tac-Toe.webp"
+  }
+]
