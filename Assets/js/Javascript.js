@@ -29,7 +29,7 @@ fetch('../../link.json')
         const imgEl = [];
 
         // Adicione as divs de imagem ao carousel
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 3; i++) {
             const imgDiv = document.createElement('div');
             imgDiv.classList.add('box');
 
