@@ -54,7 +54,7 @@ fetch('../../link.json')
 
         function updateCarousel() {
             // Atualiza a posição das imagens no carousel
-            for (let i = 0; i < 4; i++) {
+            for (let i = 0; i < 3; i++) {
                 const imgElement = imgEl[i];
                 const index = (currentImgIndex + i) % dataLength;
                 imgElement.src = data[index].image;
