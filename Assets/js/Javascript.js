@@ -39,16 +39,15 @@ fetch('../../link.json')
             boxLang.appendChild(imgDiv);
 
             const link = document.createElement('a');
-            link.href = data[i].link;
             link.target = '_blank';
             link.appendChild(imgElement);
             imgDiv.appendChild(link);
 
             imgElement.src = data[i].image;
             imgElement.alt = data[i].nome;
+            link.href = data[i].link;
+            
         }
-
-        console.log(imgEl);
 
         let currentImgIndex = 0;
 
@@ -59,7 +58,8 @@ fetch('../../link.json')
                 const index = (currentImgIndex + i) % dataLength;
                 imgElement.src = data[index].image;
                 imgElement.alt = data[index].nome;
-                imgElement.dataset.link = data[index].link;
+                const link = imgElement.parentElement;
+                link.href = data[index].link;
             }
 
             currentImgIndex = (currentImgIndex + 1) % dataLength;
