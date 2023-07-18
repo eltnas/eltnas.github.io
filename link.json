@@ -6,11 +6,12 @@
     "github" : "https://github.com/eltnas/Caixa_eletronico.git",
     "image": "./Assets/img/proj/Caixa_eletronico.webp"
   },
-  {"id" : "2",
+  {
+    "id" : "2",
     "nome": "Gorjeta",
     "link": "https://calc-gorjetas.vercel.app/",
     "github" : "https://github.com/eltnas/calc_gorjetas.git",
-    "image": "./Assets/img/proj/calc_gorjetas.webp"
+    "image": "./Assets/img/proj/calc-gorjeta.webp"
   },
   {
     "id" : "3",

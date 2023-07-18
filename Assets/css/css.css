@@ -1,23 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700&family=Quicksand:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
-
 :root {
 	--pri-color: #F2F3F7;
 	--White-color: #FFFFFF;
 	--Black-rgb: 0, 0, 0;
 }
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
 body {
 	width: 95vw;
 	background-color: var(--White-color);
 }
-
 header {
 	width: 90vw;
 	margin: auto auto;
@@ -130,26 +126,27 @@ header .perfil-lateral footer p {
 	position: fixed;
 	bottom: 0;
 }
-header .content {
+.content {
 	width: 82%;
 	margin: 0 0 0 20%;
+	padding: 0 0 0 30px;
 	box-sizing: border-box;
 }
-header .content .container {
+.content .container {
 	width: 100%;
 	height: 100vh;
 }
-header .content #Home .container #first {
+.content #Home .container #first {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
-header .content #Home .container #second {
+.content #Home .container #second {
 	width: 100%;
 	height: 100%;
 	display: none;
 }
-header .content #Home .container .image {
+.content #Home .container .image {
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -157,14 +154,14 @@ header .content #Home .container .image {
 	opacity: 0.5;
 	object-fit: cover;
 }
-header .content #Home .apres {
+.content #Home .apres {
 	width: 500px;
 	position: absolute;
 	bottom: 150px;
 	margin: 30px;
 	text-align: center;
 }
-header .content #Home .apres h1 {
+.content #Home .apres h1 {
 	font-size: 4em;
 	font-weight: 700;
 	opacity: 0.8;
@@ -175,7 +172,6 @@ header .content #Home .apres h1 {
 	white-space: nowrap;
 	animation: caret 0.5s step-end infinite alternate, type 1.5s steps(14, end);
 }
-
 @keyframes type {
 	0% {
 		width: 0;
@@ -186,18 +182,18 @@ header .content #Home .apres h1 {
 		box-shadow: 0.4em 0 0 transparent;
 	}
 }
-header .sub {
+.sub {
 	top: 15px;
 	font-weight: 300;
 	font-family: "Poppins", sans-serif;
 }
-header #Home .container .apres p {
+#Home .container .apres p {
 	font-size: 1.4em;
 	font-weight: 700;
 	opacity: 0.7;
 	padding: 5px;
 }
-header #Home .container .apres .btn {
+#Home .container .apres .btn {
 	box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -229,63 +225,70 @@ header #Home .container .apres .btn {
 	-webkit-transition: all 150ms ease-in-out;
 	transition: all 150ms ease-in-out;
 }
-header #Home .container .apres .btn:focus {
+#Home .container .apres .btn:focus {
 	color: var(--White-color);
 	outline: 0;
 }
-header #Home .container .apres .btn:hover {
+#Home .container .apres .btn:hover {
 	box-shadow: 0 0 40px 40px #d8d8b2 inset, 0 0 0 0 #d8d8b2;
 }
-header #Home .container .apres .btn a {
+#Home .container .apres .btn a {
 	text-decoration: none;
 	color: rgba(var(--Black-rgb), 0.8);
 }
-header #Home .container .apres .btn a:hover {
+#Home .container .apres .btn a:hover {
 	text-decoration: underline;
 }
-header #About {
+#About {
 	width: 100%;
 	height: 120vh;
 	background-color: var(--White-color);
 }
-header #About .container {
+#About .container {
 	padding: 10px 30px;
 }
-header #About .container .desc {
+#About .container .desc {
 	width: 800px;
 	margin: 20px auto 0 auto;
 }
-header #About .container .desc h2 {
+#About .container .desc h2 {
 	padding: 20px 30px;
 	font-size: 1.8em;
 	font-family: "Quicksand", sans-serif;
 	font-weight: 400;
 	text-decoration: underline;
 }
-header #About .container .desc p {
+#About .container .desc p {
 	padding: 10px 30px;
 	font-family: "Poppins", sans-serif;
-	font-size: 1em;
+	font-size: 1.3em;
 }
-header #About .container .box-languages {
+#About .container .box-languages {
 	width: 100%;
 	height: 60%;
+	margin: 50px 0;
 	display: flex;
 	justify-content: space-around;
 }
-header #About .container .box-languages .box {
+#About .container .box-languages .box {
 	width: 250px;
-	height: 400px;
-	background-color: #6e5494;
+	height: 250px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-header #About .container .box-info {
+#About .container .box-languages .box img {
+	width: 250px;
+	height: 250px;
+}
+#About .container .box-info {
 	margin-top: 50px;
 	font-family: "Poppins", sans-serif;
 	font-size: 1.2em;
 	font-weight: 700;
 	text-align: center;
 }
-header #About .container .box-info a {
+#About .container .box-info a {
 	color: #2a2323;
 	cursor: pointer;
 	display: block;
@@ -296,19 +299,19 @@ header #About .container .box-info a {
 	height: 40px;
 	margin: auto auto;
 }
-header #About .container .box-info a:hover {
+#About .container .box-info a:hover {
 	color: rgb(40, 40, 40);
 	background-color: rgba(132, 167, 201, 0.81);
 }
-header #Work {
+#Work {
 	width: 100%;
 	height: 160vh;
 	background-color: var(--White-color);
 }
-header #Work .container {
+#Work .container {
 	padding: 10px 30px;
 }
-header #Work .container h2 {
+#Work .container h2 {
 	padding: 20px 30px;
 	font-size: 1.8em;
 	font-family: "Quicksand", sans-serif;
@@ -316,30 +319,30 @@ header #Work .container h2 {
 	text-decoration: underline;
 	text-align: center;
 }
-header #Work .container .boxes {
+#Work .container .boxes {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-header #Work .container .boxes .box {
+#Work .container .boxes .box {
 	width: 20%;
 	height: 250px;
 	margin-top: 60px;
 	border: 1px solid rgba(160, 157, 157, 0.1);
 	box-shadow: 5px 8px 8px 1px rgba(var(--Black-rgb), 0.2);
 }
-header #Work .container .boxes .box img {
+#Work .container .boxes .box img {
 	width: 80px;
 	height: 80px;
 	margin: -50px 30% 0 30%;
 }
-header #Work .container .boxes .box h1, header #Work .container .boxes .box p {
+#Work .container .boxes .box h1, header #Work .container .boxes .box p {
 	width: 80%;
 	margin: auto auto;
 	padding-top: 20px;
 }
-header #Work .container .box-info {
+#Work .container .box-info {
 	width: 90%;
 	margin: 10% auto 0 auto;
 	background-color: #F7F4F4;
@@ -347,31 +350,31 @@ header #Work .container .box-info {
 	flex-direction: row;
 	justify-content: space-between;
 }
-header #Work .container .box-info h2 {
+#Work .container .box-info h2 {
 	padding: 15px;
 	color: #363030;
 }
-header #Ability {
+#Ability {
 	width: 100%;
 	height: 60vh;
 	background-color: var(--White-color);
 }
-header #Ability .container {
+#Ability .container {
 	padding: 10px 30px;
 }
-header #Ability .container h2 {
+#Ability .container h2 {
 	padding: 20px 30px;
 	font-size: 1.8em;
 	font-family: "Quicksand", sans-serif;
 	font-weight: 400;
 	text-decoration: underline;
 }
-header #Ability .container p {
+#Ability .container p {
 	padding: 10px 30px;
 	font-family: "Poppins", sans-serif;
 	font-size: 1em;
 }
-header #Ability .container .boxes {
+#Ability .container .boxes {
 	width: 75%;
 	height: 50px;
 	margin: auto 20px auto 0;
@@ -379,78 +382,71 @@ header #Ability .container .boxes {
 	justify-content: space-between;
 	justify-items: center;
 }
-header #Ability .container .boxes .box {
+#Ability .container .boxes .box {
 	width: 50%;
 	margin: 30px 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
-header #Ability .container .boxes .box p {
+#Ability .container .boxes .box p {
 	margin: -15px 5px 0 5px;
 }
-header #Ability .container .boxes .box .progress-bar {
+#Ability .container .boxes .box .progress-bar {
 	width: 180%;
 	height: 20px;
 	margin: 5px;
 	background-color: #CCCCCC;
 	display: flex;
 }
-header #Ability .container .boxes .box .progress-bar::before {
+#Ability .container .boxes .box .progress-bar::before {
 	content: "";
 }
-
 .pg-html .progress-bar::before {
 	width: 61.14%;
 	background-color: #DD4B25;
 }
-
 .pg-css .progress-bar::before {
 	width: 72.04%;
 	background-color: #0068BA;
 }
-
 .pg-javascript .progress-bar::before {
 	width: 84.04%;
 	background-color: #F7DF1E;
 }
-
 .pg-typescript .progress-bar::before {
 	width: 72.68%;
 	background-color: #3178C6;
 }
-
 .pg-python .progress-bar::before {
 	width: 59.69%;
 	background-color: #3674A5;
 }
-
 .pg-php .progress-bar::before {
 	width: 44%;
 	background-color: #777BB3;
 }
-
-header #Contact {
+#Contact {
 	width: 100%;
 	height: 60vh;
 	background-color: var(--White-color);
 }
-header #Contact .container {
+#Contact .container {
 	padding: 10px 30px;
 }
-header #Contact .container h2 {
+#Contact .container h2 {
 	padding: 20px 30px;
 	font-size: 1.8em;
 	font-family: "Quicksand", sans-serif;
 	font-weight: 400;
 	text-decoration: underline;
 }
-header #Contact .container p {
+#Contact .container p {
 	padding: 10px 30px;
 	font-family: "Poppins", sans-serif;
 	font-size: 1em;
 }
-header #Contact .container .contacts {
+#Contact .container .contacts {
 	width: 70%;
 	margin: auto auto;
 	padding-top: 50px;
@@ -458,13 +454,12 @@ header #Contact .container .contacts {
 	flex-direction: row;
 	justify-content: center;
 }
-header #Contact .container .contacts img {
+#Contact .container .contacts img {
 	width: 30%;
 }
-header #Contact .container .contacts a {
+#Contact .container .contacts a {
 	text-decoration: none;
 	margin: auto auto;
 	color: #000080;
 }
-
 /*# sourceMappingURL=styles.css.map */
