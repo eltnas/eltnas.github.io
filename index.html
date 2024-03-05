@@ -1,222 +1,210 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Elton C. Nascimento</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elton C. Nascimento</title>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="./Assets/css/css.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
-<header>
-	<!-- Parte do perfil e menu lateral -->
-	<section class="perfil-lateral">
-		<!-- Perfil -->
-		<div class="perfil">
-			<div class="perfil-foto">
-				<img src="./Assets/img/elton_c_nascimento.jpg" />
-			</div>
-			<div class="perfil-sub">
-				<h1>Elton C. Nascimento</h1>
-				<h3>Engenheiro de Software</h3>
-				<div class="redes-sociais">
-					<a href="https://github.com/eltnas" class="link-github"><i class="fa-brands fa-square-github"></i></a>
-					<a href="https://www.linkedin.com/in/eltnas/" class="link-linkedin"><i class="fa-brands fa-linkedin"></i></a>
-					<a href="https://www.instagram.com/eltnas.dev/" class="link-instagram"><i class="fa-brands fa-square-instagram"></i></a>
-				</div>
-			</div>
-		</div>
-		<!-- Fim perfil -->
+<div id="pageHome" class="page__header page_tam">
+    <div id="header_content">
+        <div class="header_apres">
+            <h3>Olá, como vai!</h3>
+            <h1>Sou <span>Elton</span></h1>
+            <div class="apres_profissao">
+                <p class="titulo">Desenvolvedor Web | Fotográfo amador</p>
+            </div>
+            <p class="apresentation">Apaixonado por capturar a beleza digital e física. Transformando códigos em experiências e momentos em imagens memoráveis. Vamos explorar juntos!</p>
 
-		<!-- menu -->
-		<nav class="nav-menu">
-			<ul class="menu-container">
-				<li><a href="#Home">Inicio</a></li>
-				<li><a href="#About">Sobre</a></li>
-				<li><a href="#Work">O que faço</a></li>
-				<li><a href="#Ability">Habilidades</a></li>
-				<li><a href="#Contact">Contato</a></li>
-			</ul>
-		</nav>
-		<!-- fim menu -->
-		<footer>
-			<p><span>&copy Elton C. Nascimento</span></p>
-		</footer>
-		<!-- footer -->
+            <button href="#pageAboutMe" onclick="showPage(2, 3)">Mais sobre mim!</button>
+        </div>
+        <div class="header_image">
+            <img src="assets/img/foto-perfil.webp" alt="Elton C. Nascimento" />
+        </div>
+    </div>
+</div>
+<div id="pages_content" class="pages page_tam">
+    <div class="site_menu">
+        <div class="menu-img">
+            <img src="assets/img/foto-perfil.webp" alt="Elton C. Nascimento" />
+        </div>
 
-		<!-- fim footer -->
-	</section>
-</header>
-	<!-- Fim da parte do perfil e menu lateral -->
+        <div class="menu-nav">
+            <ul class="menu-list">
+                <a href="#pageHome" class="opt_menu active" onclick="showPage(0, 1)"><li>Inicio</li></a>
+                <a href="#aboutme" class="opt_menu" onclick="showPage(2, 3)"><li>Sobre Mim</li></a>
+                <a href="#resume" class="opt_menu" onclick="showPage(2, 4)"><li>Profissional</li></a>
+                <a href="#portifolio" class="opt_menu" onclick="showPage(2, 5)"><li>Portifólio</li></a>
+                <a href="#testimonials" class="opt_menu" onclick="showPage(2, 6)"><li>Testemunhos</li></a>
+                <a href="#contact" class="opt_menu" onclick="showPage(2, 7)"><li>Contato</li></a>
+        </div>
+    </div>
+    <div class="conteudo">
+        <div id="pageAboutMe">
+            <div class="page_title">
+                <h1>Sobre Mim</h1>
+            </div>
 
-	<!-- Inicio da pagina -->
-	<section class="content">
-		<!-- Inicio da section Home -->
-		<section id="Home">
-			<div class="container">
-				<div id="first">
-					<img src="./Assets/img/bkg1.webp" alt="Computador sobre a mesa" class="image" id="img1">
-					<div class="apres">
-						<h1 class="desc-title" id="desc-title1">Olá, Sou o Elton</h1>
-						<p class="description" id="description1">Sou um Engenheiro de Software em formação!!</p>
+            <div class="aboutme_apres">
+                <h2>Sou <span>Elton C. Nascimento</span>, Web Designer e Fotográfo amador.</h2>
+                <p class="apres_text">
+                    Olá! Sou Elton Carlos, um web designer apaixonado pela arte da fotografia. Minha missão é criar experiências digitais memoráveis e capturar momentos únicos através da lente da minha câmera. Combinando design e fotografia, busco contar histórias visualmente cativantes e transmitir emoções em cada projeto. Estou aqui para transformar ideias em imagens e websites que deixam uma impressão duradoura.
+                </p>
+                <div class="skills">
+                    <div class="skills-box">
+                        <div class="box">
+                            <div class="box-infos">
+                                <div class="box-info"><h2>100+</h2></div>
+                                <div class="box-desc"><h3>Projetos</h3></div>
+                            </div>
+                            <div class="box-infos">
+                                <div class="box-info"><h2>80+</h2></div>
+                                <div class="box-desc"><h3>Clientes</h3></div>
+                            </div>
+                        </div>
 
-						<button class="btn" id="btn1"><a href="./curriculo/Elton_C_Nascimento.pdf">Donwload CV</a></button>
-					</div>
-				</div>
+                        <div class="box">
+                            <div class="box-infos">
+                                <div class="box-info"><h2>5+</h2></div>
+                                <div class="box-desc"><h3>Anos de experiencia</h3></div>
+                            </div>
+                            <div class="box-infos">
+                                <div class="box-info"><h2>10000+</h2></div>
+                                <div class="box-desc"><h3>Xicaras de Cafe</h3></div>
+                            </div>
+                        </div>
 
+                    </div>
 
-				<div id="second">
-					<img src="./Assets/img/bkg2.webp" alt="Homem trabalhando com um computador" class="image">
-					<div class="apres">
-						<h1 class="desc-title" id="desc-title2">Web Developer</h1>
-						<p class="description" id="description2">Criação de sites dinâmicos, com as melhores e mais atuais tecnologias do mercado!</p>
+                    <div class="whatIDo">
+                        <h2>O que faço?</h2>
 
-						<button class="btn" id="btn2"><a href="#Work">Meu Portifólio</a></button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- fim da section Home -->
+                        <div class="box-whatIDo">
+                            <div class="box-icon">
+                                <img src="./assets/img/bd.webp" alt="Desenvolvimento de Sistemas" />
+                            </div>
+                            <div class="box-desc">
+                                <h4>Desenvolvimento de Sistemas</h4>
+                                <p>Sempre pensando na usabilidade do software, para que seja efeiciente para o usuário.</p>
+                            </div>
+                        </div>
+                        <div class="box-whatIDo">
+                            <div class="box-icon">
+                                <img src="./assets/img/design-grafico.webp" alt="Layouts Personalizados" />
+                            </div>
+                            <div class="box-desc">
+                                <h4>Layouts Personalizados</h4>
+                                <p>Sistemas desenvolvidos de acordo com a identidade do seu negócio.</p>
+                            </div>
+                        </div>
+                        <div class="box-whatIDo">
+                            <div class="box-icon">
+                                <img src="./assets/img/aplicativos-moveis.webp" alt="Aplicativos Moveis" />
+                            </div>
+                            <div class="box-desc">
+                                <h4>Aplicativos Moveis</h4>
+                                <p>Desenvolvimento de Apps de acordo com a nescessidade do seu negócio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<!-- Inicio da section About -->
-		<section class="content-sobre" id="About">
-			<div class="container">
-				<h4 class="sub">Sobre mim</h4>
-				<div class="desc">
-					<h2>Quem sou eu?</h2>
-					<p><span>Olá, sou Elton C. Nascimento</span>, sou Engenheiro de Sotware em formação, isso porque ainda estou me formando pela Unicesumar. Atualmente, crio sistemas com JavaScript e React, mas em um futuro proximo quero extender para novas tecnologias como Python e Ruby por exemplo.</p>
-				</div>
-				<div class="box-languages">
+        </div>
+        <div id="pageResume">
+            <div class="page_title">
+                <h1>Curriculo</h1>
 
-				</div>
-				<div class="box-info">
-					<h4>Sou imensamente grato por ter mais de 300 projetos concluidos!</h4>
-					<br />
-					<a href="#Home" class="btn">Conheça</a>
-				</div>
-			</div>
-		</section>
-		<!-- Fim da section About -->
+                <div class="curriculo">
+                    
+                    <div class="curriculo-box">
+                        <div class="box-tipo">
+                            <p>WebDesing</p>
+                        </div>
+                        <div class="box-data">
+                            <div class="box-data">
+                                <div class="empresa"><p>Elgle Eventos</p></div>
+                                <br/>
+                                <div class="desc">
+                                    <p>Responsavel pela elaboração do website e do sistema de vendas online.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="curriculo-box">
+                        <div class="box-tipo">
+                            <p>WebDesing</p>
+                        </div>
+                        <div class="box-data">
+                            <div class="empresa"><p>Zin Software</p></div>
+                            <br/>
+                            <div class="desc">
+                                <p>Responsavel pela elaboração do sistema da empresa.</p>
+                            </div>
+                        </div>
+                    </div>
 
-		<!-- Inicio da section Work -->
-		<section class="content-work" id="Work">
-			<div class="container">
-				<h4 class="sub">O que faço?</h4>
-				<h2>Aqui estão alguns dos serviços que ofereço</h2>
-				<div class="boxes">
-					<div class="box">
-						<img src="./Assets/img/ideia.jpg" alt="Ideias Inovadoras" />
-						<h1>Ideias Inovadoras</h1>
-						<p>Sempre exploro novas possibilidades e soluciono problemas existentes de maneira criativa e prática.</p>
-					</div>
-					<div class="box">
-						<img src="./Assets/img/bd.jpg" alt="Desenvolvimento de Software" />
-						<h1>Desenvolvimento de Sistemas</h1>
-						<p>Sempre pensando na usabilidade do software, para que seja efeiciente para o usuário.</p>
-					</div>
-					<div class="box">
-						<img src="./Assets/img/application.png" alt="Desenvolvimento de Aplicativos Moveis" />
-						<h1>Aplicativos Moveis</h1>
-						<p>Desenvolvimento de Apps de acordo com a nescessidade do seu negócio.</p>
-					</div>
-				</div>
-				<div class="boxes">
-					<div class="box">
-						<img src="./Assets/img/design-grafico.png" alt="Criação de Layouts personalizados" />
-						<h1>Layouts Personalizados</h1>
-						<p>Sistemas desenvolvidos de acordo com a identidade do seu negócio.</p>
-					</div>
-					<div class="box">
-						<img src="./Assets/img/teste-software.jpg" alt="Teste de software" />
-						<h1>Teste de software</h1>
-						<p>Efetuo teste em seu software e gero relatórios sobre a qualidade e os riscos de falha.</p>
-					</div>
-					<div class="box">
-						<img src="./Assets/img/codigo.png" alt="Revisão de codigos" />
-						<h1>Revisão de Códigos</h1>
-						<p>Analiso o codigo desenvolvido, para identificar possiveis problemas/bugs.</p>
-					</div>
-				</div>
-				<div class="box-info">
-					<h2>Projetos Criados: <span>360</span></h2>
-					<h2>Clientes Satifeitos: <span>115</span></h2>
-					<h2>Xicaras de Chá: <span>13141666</span></h2>
-				</div>
-			</div>
-		</section>
-		<!-- Fim da section Work -->
+                    <div class="curriculo-box">
+                        <div class="box-tipo">
+                            <p>WebDesing</p>
+                        </div>
+                        <div class="box-data">
+                            <div class="box-data">
+                                <div class="empresa"><p>E.C.N. Consultoria de Software</p></div>
+                                <br/>
+                                <div class="desc">
+                                    <p>Responsavel pela elaboração e revisão de codigos e sistemas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-		<!-- Inicio da section Ability -->
-		<section class="content-habilidades" id="Ability">
-			<div class="container">
-				<h4 class="sub">Habilidades</h4>
-				<h2>Minhas Habilidades</h2>
-				<p>Como profissional da area de desenvolvimento de sistemas, procuro sempre estar atualizado com as mais novas tecnologias. Atualmente, trabalho com Javascript, isso inclui tecnologias como React e Vue.</p>
-				<div class="boxes">
-					<div class="box pg-html">
-						<p>HTML5</p>
-						<div class="progress-bar"></div>
-					</div>
-					<div class="box pg-css">
-						<p>CSS3</p>
-						<div class="progress-bar"></div>
-					</div>
-				</div>
-				<div class="boxes">
-					<div class="box pg-javascript">
-						<p>JavaScript</p>
-						<div class="progress-bar"></div>
-					</div>
-					<div class="box pg-typescript">
-						<p>TypeScript</p>
-						<div class="progress-bar"></div>
-					</div>
-				</div>
-				<div class="boxes">
-					<div class="box pg-python">
-						<p>Python</p>
-						<div class="progress-bar"></div>
-					</div>
-					<div class="box pg-php">
-						<p>PHP</p>
-						<div class="progress-bar"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Fim da section Ability -->
+                </div>
 
-		<!-- Inicio da section Contact -->
-		<section class="content-contato" id="Contact">
-			<div class="container">
-				<h4>Contato</h4>
-				<h2>Entre em contato</h2>
-				<p>Nesse momento estou atendendo apenas via Whatsapp ou telefone. Mas caso queira, também pode entrar em contato via Email.</p>
+            </div>
+        </div>
+        <div id="pagePortifolio">
+            <div class="page_title">
+                <h1>portifolio</h1>
+            </div>
 
-				<div class="contacts">
-					<div class="contact-whatsapp"><a href="https://wa.me/5544998505518?text=Ol%C3%A1%2C+vem+pelo+seu+site.">
-						<img src="./Assets/img/wtp.webp" alt="WhatsApp" /><br /><h3>WhatsApp</h3></a>
-					</div>
-					<div class="contact-telefone">
-						<a href="tel:+5544998505518"><img src="./Assets/img/telefone.png" alt="Telefone" /><br /><h3>Telefone</h3></a>
-					</div>
-					<div class="contact-email">
-						<a href="mailto:eltnas@outlook.com"><img src="./Assets/img/email.png" alt="Email" /><br /><h3>Email</h3></a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Fim da section Contact -->
-	</section>
-	<!-- Fim da pagina -->
+        </div>
+        <div id="pageTestimonials">
+            <div class="page_title">
+                <h1>testimonials</h1>
+            </div>
 
-	<!-- Javascript -->
-	<script src="./Assets/js/Javascript.js"></script>
+        </div>
+        <div id="pageContact">
+            <div class="page_title">
+                <h1>contact</h1>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="menu__lateral">
+    <ul>
+        <a href="#pageHome" id="menu_pageHome" class="opt_menu active" onclick="showPage(0, 1)" ><li><i class="fa-solid fa-house"></i></li></a>
+        <a href="#pageAboutMe" id="menu_pageAboutMe" class="opt_menu " onclick="showPage(2, 3)"><li><i class="fa-solid fa-user"></i></li></a>
+        <a href="#pageResume" id="menu_pageResume" class="opt_menu " onclick="showPage(2, 4)"><li><i class="fa-solid fa-suitcase"></i></li></a>
+        <a href="#pagePortifolio" id="menu_pagePortifolio" class="opt_menu " onclick="showPage(2, 5)"><li><i class="fa-solid fa-desktop"></i></li></a>
+        <a href="#pageTestimonials" id="menu_pageTestimonials" class="opt_menu " onclick="showPage(2, 6)"><li><i class="fa-solid fa-comment-dots"></i></li></a>
+        <a href="#pageContact" id="menu_pageContact" class="opt_menu " onclick="showPage(2, 7)"><li><i class="fa-solid fa-phone"></i></li></a>
+    </ul>
+
+</div>
+
+<script src="./assets/javascript/js.js"></script>
 </body>
+</html>
