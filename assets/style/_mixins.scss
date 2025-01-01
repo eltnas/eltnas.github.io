@@ -1,0 +1,66 @@
+@mixin resetPage(){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin fontFamily($font, $weight, $style, $size){
+    font-family: $font, serif;
+    font-weight: $weight;
+    font-style: $style;
+    font-size: $size;
+}
+
+@mixin mediaQuery($width){
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin socialFace($value){
+    color: rgba($value, .4);
+    &:hover{
+        background: linear-gradient(135deg, #1877f2, #4b8bf5);
+        color: #FFF;
+        border-color: #1877f2;
+    }
+}
+
+@mixin socialLinkedIn($value) {
+    color: rgba($value, .4); /* Cor inicial do texto */
+    &:hover {
+        background: #0077B5; /* Cor oficial do LinkedIn no hover */
+        color: #FFF; /* Cor do texto no hover */
+        border-color: #0077B5; /* Cor da borda no hover */
+    }
+}
+
+@mixin socialInsta($value){
+    color: rgba($value, .4);
+    &:hover{
+        background: linear-gradient(135deg, #F09433, #E4405F, #C13584);
+        color: #FFF;
+        border-color: #C13584;
+    }
+}
+
+@mixin socialUser($value){
+    color: rgba($value, .4);
+    &:hover{
+        background: linear-gradient(135deg, #4CAF50, #2E7D32);
+        color: #FFF;
+        border-color: #00A6ED;
+    }
+}
+
+@mixin displayFlex($fd, $jc, $ai){
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin test($color){
+    background: $color;
+}
+
