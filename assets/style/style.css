@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
@@ -5,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
   width: 100%;
   background: #E4E8EC;
   display: flex;
@@ -22,6 +23,13 @@ body {
   padding: 2rem;
   border-radius: 1rem;
   background: #F5F7FA;
+  flex: 1;
+}
+@media (max-width: 800px) {
+  .pageBox {
+    width: 100%;
+    margin: 1rem auto;
+  }
 }
 
 #top_bar {
@@ -62,11 +70,12 @@ body {
   font-style: normal;
   font-size: 1.3em;
 }
-#top_bar nav {
-  width: 60%;
+#top_bar .nav-menu-desktop {
+  width: calc(100% - 300px);
+  max-width: 500px;
   height: 100%;
 }
-#top_bar nav ul {
+#top_bar .nav-menu-desktop ul {
   width: 100%;
   height: 100%;
   display: flex;
@@ -74,7 +83,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#top_bar nav ul li {
+#top_bar .nav-menu-desktop ul li {
   width: 20%;
   height: 100%;
   display: flex;
@@ -89,10 +98,72 @@ body {
   font-size: 1em;
   cursor: pointer;
 }
-#top_bar nav ul li:hover {
+#top_bar .nav-menu-desktop ul li:hover {
   color: #666666;
   background-color: #E4E8EC;
   text-decoration: underline;
+}
+@media (max-width: 852px) {
+  #top_bar .nav-menu-desktop {
+    display: none;
+  }
+}
+#top_bar .nav-menu-mobile {
+  display: none;
+  width: 30px;
+  height: 100%;
+  text-align: right;
+}
+#top_bar .nav-menu-mobile span {
+  width: 100%;
+  height: 30px;
+  font-size: 1.4em;
+  margin: 20px 10px 0 0;
+  text-align: right;
+}
+#top_bar .nav-menu-mobile .menu-mobile {
+  display: none;
+  width: 375px;
+  height: 100vh;
+  padding-top: 20px;
+  box-shadow: 3px 3px 3px #666666;
+  position: relative;
+  float: right;
+  z-index: 99;
+  background-color: #F5F7FA;
+}
+#top_bar .nav-menu-mobile .menu-mobile ul {
+  width: 375px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#top_bar .nav-menu-mobile .menu-mobile ul li {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: #333333;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  cursor: pointer;
+}
+#top_bar .nav-menu-mobile .menu-mobile ul li:hover {
+  color: #666666;
+  background-color: #E4E8EC;
+  text-decoration: underline;
+}
+@media (max-width: 852px) {
+  #top_bar .nav-menu-mobile {
+    display: block;
+  }
 }
 
 #pageHome {
@@ -111,6 +182,12 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  #pageHome #pageHome_content .box_content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 #pageHome #pageHome_content .box_content .welcome {
   width: 50%;
@@ -146,6 +223,48 @@ body {
   font-style: normal;
   font-size: 2.3em;
   margin-bottom: 0.5rem;
+}
+#pageHome #pageHome_content .box_content .welcome .desc .box-btn {
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  #pageHome #pageHome_content .box_content .welcome .desc .box-btn {
+    height: 125px;
+    flex-direction: column;
+  }
+}
+#pageHome #pageHome_content .box_content .welcome .desc .box-btn button {
+  width: 40%;
+  height: 50px;
+  border-radius: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+  color: #FFFFFF;
+}
+@media (max-width: 1000px) {
+  #pageHome #pageHome_content .box_content .welcome .desc .box-btn button {
+    width: 100%;
+  }
+}
+#pageHome #pageHome_content .box_content .welcome .desc .box-btn #btnAboutMe {
+  background: #0056D2;
+}
+#pageHome #pageHome_content .box_content .welcome .desc .box-btn #btnAboutMe:hover {
+  background: #339AF0;
+}
+#pageHome #pageHome_content .box_content .welcome .desc .box-btn #myResume {
+  background: #218838;
+}
+#pageHome #pageHome_content .box_content .welcome .desc .box-btn #myResume:hover {
+  background: #1E7E34;
 }
 #pageHome #pageHome_content .box_content .welcome .social {
   width: 50%;
@@ -213,7 +332,13 @@ body {
 }
 #pageHome #pageHome_content .box_content .dev-img {
   width: 50%;
+  min-width: 375px;
   height: 100%;
+}
+@media (max-width: 800px) {
+  #pageHome #pageHome_content .box_content .dev-img {
+    order: -1;
+  }
 }
 #pageHome #pageHome_content .box_content .dev-img img {
   width: 100%;
@@ -228,7 +353,7 @@ body {
 }
 #pageAboutMe .box-apres {
   width: 100%;
-  height: 40%;
+  height: auto;
 }
 #pageAboutMe .box-apres .apres-img {
   width: 100px;
@@ -246,8 +371,6 @@ body {
 }
 #pageAboutMe .box-apres .apres {
   width: 100%;
-  height: calc(100% - 150px);
-  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,15 +395,10 @@ body {
   letter-spacing: 1px;
   text-align: center;
 }
-#pageAboutMe .box-apres .apres #ptbr {
-  display: block;
-}
-#pageAboutMe .box-apres .apres #en {
-  display: none;
-}
 #pageAboutMe .box-skills {
   width: 100%;
-  height: 400px;
+  height: auto;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,7 +427,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -498,15 +616,23 @@ body {
 }
 
 footer {
-  width: 100%;
-  height: 2rem;
+  position: fixed;
+  /* Fixa o footer na viewport */
   bottom: 0;
+  /* Coloca o footer no fundo */
+  left: 0;
+  width: 100%;
+  /* Garante que ocupe toda a largura */
+  height: 2rem;
+  /* Altura do footer */
   background: #F5F7FA;
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
+  /* Mantém o footer acima de outros elementos */
 }
+
 footer p {
   font-family: "Roboto", serif;
   font-weight: 600;
@@ -514,6 +640,7 @@ footer p {
   font-size: 1em;
   color: rgba(51, 51, 51, 0.5);
 }
+
 footer p a {
   color: rgba(19, 18, 18, 0.5);
   text-decoration: none;

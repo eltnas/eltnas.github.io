@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/image/favicon.ico">
     <title>Elton C. Nascimento</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/style/style.css" />
@@ -23,7 +27,7 @@
             </div>
         </div>
 
-        <nav>
+        <nav class="nav-menu-desktop">
             <ul class="nav-menu">
                 <li class="menu-itens" data-id="pageHome">Home</li>
                 <li class="menu-itens" data-id="pageAboutMe">Sobre</li>
@@ -33,18 +37,37 @@
                 <li class="menu-itens" data-id="pageContact">Contato</li>
             </ul>
         </nav>
+        <nav class="nav-menu-mobile">
+            <span class="icon-menu" onclick="showHiddeMenuMobile('show')"></span>
+            <div class="menu-mobile">
+                <span class="icon-close" onclick="showHiddeMenuMobile('hiden')"></span>
+                <ul>
+                    <li class="menu-itens" on onclick="changeSection('pageHome')">Home</li>
+                    <li class="menu-itens" on onclick="changeSection('pageAboutMe')">Sobre</li>
+                    <li class="menu-itens" on onclick="changeSection('pagePortifolio')">Portifólio</li>
+                    <li class="menu-itens" on onclick="changeSection('pageTechs')">Serviços</li>
+                    <li class="menu-itens" on onclick="changeSection('pageResumo')">Resumo</li>
+                    <li class="menu-itens" on onclick="changeSection('pageContact')">Contato</li>
+                </ul>
+            </div>
+
+        </nav>
     </div>
 
 <!-- Home -->
 <section id="pageHome" class="pageBox">
     <div id="pageHome_content">
-
         <div class="box_content">
             <div class="welcome">
                 <div class="desc">
                     <p>Olá, eu sou</p>
-                    <h3>Desenvolvedor Front-End</h3>
+                    <h3><span class="typed_function" data-typed-items="Desenvolvedor Fullstack, Fotográfo Amador, Jogador de WoW"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></h3>
                     <p>Seja bem vindo ao meu website!</p>
+
+                    <div class="box-btn">
+                        <button id="btnAboutMe" onclick="goToPage('pageAboutMe')">Me Conheça</button>
+                        <button id="myResume" onclick="dowloadResume()">Meu Curriculo</button>
+                    </div>
 
                 </div>
                 <div class="social">
@@ -74,8 +97,7 @@
         </div>
         <div class="apres">
             <h2>Elton <span>Nascimento</span></h2>
-            <p id="ptbr" class="apres-text">Olá, me chamo Elton Nascimento, sou de Belo Horizonte, MG. Estudante de Ciencias da Computação pela faculdade Descomplica, sou apaixonado por tecnologias e desenvolvimento.</p>
-            <p id="en" class="apres-text">Hello, my name is Elton Nascimento, and I am from Belo Horizonte, MG. I am a Computer Science student at Descomplica College, passionate about technology and development.</p>
+            <p class="apres-text">Olá, me chamo Elton Nascimento, sou de Belo Horizonte, MG. Estudante de Ciencias da Computação pela faculdade Descomplica, sou apaixonado por tecnologias e desenvolvimento.</p>
         </div>
     </div>
 
@@ -226,7 +248,8 @@
 <footer>
     <p>Desenvolvido por <a href="https://eltnas.github.io/">Elton C. Nascimento</a></p>
 </footer>
-<script src="assets/scripts/redeSocial.js"></script>
-<script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/redeSocial.js"></script>
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>
