@@ -303,16 +303,12 @@ body, html {
   border-color: #1877f2;
 }
 #pageHome #pageHome_content .box_content .welcome .social .social-bar ul #social-linkedin {
-  color: rgba(102, 102, 102, 0.4);
-  /* Cor inicial do texto */
+  color: rgba(102, 102, 102, 0.4); /* Cor inicial do texto */
 }
 #pageHome #pageHome_content .box_content .welcome .social .social-bar ul #social-linkedin:hover {
-  background: #0077B5;
-  /* Cor oficial do LinkedIn no hover */
-  color: #FFF;
-  /* Cor do texto no hover */
-  border-color: #0077B5;
-  /* Cor da borda no hover */
+  background: #0077B5; /* Cor oficial do LinkedIn no hover */
+  color: #FFF; /* Cor do texto no hover */
+  border-color: #0077B5; /* Cor da borda no hover */
 }
 #pageHome #pageHome_content .box_content .welcome .social .social-bar ul #social-insta {
   color: rgba(102, 102, 102, 0.4);
@@ -470,10 +466,9 @@ body, html {
 }
 
 #pagePortifolio {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
-  align-items: space-evenly;
 }
 #pagePortifolio .container-top {
   width: 100%;
@@ -609,6 +604,277 @@ body, html {
 
 #pageTechs {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+#pageTechs .container-top {
+  width: 100%;
+  height: 65px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+#pageTechs .container-top .title-box {
+  width: 180px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#pageTechs .container-top .title-box h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8em;
+  color: #666666;
+}
+#pageTechs .container-top .title-box h2 span {
+  color: #333333;
+}
+#pageTechs .container-top .subTitle-box {
+  width: 270px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+}
+#pageTechs .box-techs {
+  width: 100%;
+  height: auto;
+  margin: 60px 0;
+  min-height: calc(100% - 80px);
+}
+#pageTechs .box-techs .techs-list {
+  width: 100%;
+  margin: 2rem 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#pageTechs .box-techs .techs-list .techs-item {
+  width: 275px;
+  height: 400px;
+  margin: 3rem 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px #666666;
+}
+#pageTechs .box-techs .techs-list .techs-item .techs-img {
+  width: 100%;
+  height: 150px;
+  margin-top: -5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#pageTechs .box-techs .techs-list .techs-item .techs-img img {
+  width: 150px;
+  height: 100%;
+}
+#pageTechs .box-techs .techs-list .techs-item .techs-title {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+  padding: 0 1rem;
+}
+#pageTechs .box-techs .techs-list .techs-item .techs-title h3 {
+  margin-top: 3rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6em;
+  color: #333333;
+}
+#pageTechs .box-techs .techs-list .techs-item .techs-title ul {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-between;
+  margin-top: 1rem;
+}
+#pageTechs .box-techs .techs-list .techs-item .techs-title ul li {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3em;
+}
+
+#pageResumo {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+#pageResumo .container-top {
+  width: 100%;
+  height: auto;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+#pageResumo .container-top .title-box {
+  width: 180px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#pageResumo .container-top .title-box h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8em;
+  color: #666666;
+}
+#pageResumo .container-top .title-box h2 span {
+  color: #333333;
+}
+#pageResumo .box-resumo {
+  width: 100%;
+  height: auto;
+  margin: 60px 0;
+  min-height: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pageResumo .box-resumo .resumo-name {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pageResumo .box-resumo .resumo-name h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.3em;
+  color: #333333;
+}
+#pageResumo .box-resumo .resumo-name h2 span {
+  color: #666666;
+}
+#pageResumo .box-resumo .resumo-name p {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+  color: #333333;
+  margin-top: 0.5rem;
+}
+#pageResumo .box-resumo .resumo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#pageResumo .box-resumo .resumo .resumo-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#pageResumo .box-resumo .resumo .resumo-item .item {
+  width: 45%;
+  height: auto;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#pageResumo .box-resumo .resumo .resumo-item .item h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6em;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+#pageResumo .box-resumo .resumo .resumo-item .item ul {
+  width: 100%;
+}
+#pageResumo .box-resumo .resumo .resumo-item .item ul li {
+  width: 100%;
+  height: auto;
+  list-style: none;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#pageResumo .box-resumo .resumo .resumo-item .item ul li span {
+  width: 100%;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+  color: #666666;
+}
+#pageResumo .box-resumo .resumo .resumo-item .item ul li .resumo-item-date {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#pageResumo .box-resumo .resumo .resumo-item .item ul li .resumo-item-date p {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+#pageResumo .box-resumo .resumo .resumo-item .item ul li .resumo-item-date p span {
+  width: 120px;
+  background: #666666;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: #F5F7FA;
+  padding: 0 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+#pageResumo .box-resumo .resumo .resumo-item .item ul li .resumo-item-desc {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#pageResumo .box-resumo .resumo .resumo-item .item ul li .resumo-item-desc p {
+  width: 100%;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
 }
 
 #pageContact {
@@ -616,21 +882,16 @@ body, html {
 }
 
 footer {
-  position: fixed;
-  /* Fixa o footer na viewport */
-  bottom: 0;
-  /* Coloca o footer no fundo */
+  position: fixed; /* Fixa o footer na viewport */
+  bottom: 0; /* Coloca o footer no fundo */
   left: 0;
-  width: 100%;
-  /* Garante que ocupe toda a largura */
-  height: 2rem;
-  /* Altura do footer */
+  width: 100%; /* Garante que ocupe toda a largura */
+  height: 2rem; /* Altura do footer */
   background: #F5F7FA;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
-  /* Mantém o footer acima de outros elementos */
+  z-index: 100; /* Mantém o footer acima de outros elementos */
 }
 
 footer p {

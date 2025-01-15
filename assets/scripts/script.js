@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function goToPage(id){
     changeSection(id);
+    showHiddeMenuMobile("hiden");
     // alert(id)
 }
 
