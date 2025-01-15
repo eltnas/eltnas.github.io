@@ -97,11 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setupNavigation();
 });
 
-function goToPage(id){
-    changeSection(id);
-    showHiddeMenuMobile("hiden");
-    // alert(id)
-}
 
 function dowloadResume(){
     let linkDownload = "./assets/docs/resume_elton.pdf"
@@ -144,7 +139,10 @@ function showHiddeMenuMobile(value){
         menuMobile.style.display = 'none';
         openMenu.style.display = 'block';
     }
+}
 
-
-
+function goToPage(id){
+    changeSection(id);
+    showHiddeMenuMobile("hiden");
+    // alert(id)
 }
