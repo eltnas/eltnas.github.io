@@ -879,6 +879,119 @@ body, html {
 
 #pageContact {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+#pageContact .container-top {
+  width: 100%;
+  height: 65px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+#pageContact .container-top .title-box {
+  width: 180px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#pageContact .container-top .title-box h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.8em;
+  color: #666666;
+}
+#pageContact .container-top .title-box h2 span {
+  color: #333333;
+}
+#pageContact .container-top .subTitle-box {
+  width: 270px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+}
+#pageContact .box-contact {
+  width: 100%;
+  height: 500px;
+  margin: 60px 0;
+  min-height: calc(100% - 80px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#pageContact .box-contact .contact-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  #pageContact .box-contact .contact-form {
+    order: -1;
+  }
+}
+#pageContact .box-contact .contact-form form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+#pageContact .box-contact .contact-form form input {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #666666;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+  color: #666666;
+  outline: none;
+}
+#pageContact .box-contact .contact-form form textarea {
+  width: 100%;
+  height: 150px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #666666;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+}
+#pageContact .box-contact .contact-form form button {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background: #0F4C75;
+  color: #F5F7FA;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+}
+#pageContact .box-contact .contact-form form button:hover {
+  background: #FF784F;
 }
 
 footer {
