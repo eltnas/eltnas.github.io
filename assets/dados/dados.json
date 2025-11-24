@@ -1,0 +1,136 @@
+{
+    "home" : {
+        "nome" : "Elton Nascimento",
+        "profissao" : [
+            "Fotógrafo Amador",
+            "Designer Gráfico",
+            "Web Designer"
+        ],
+        "frase" : "A seriedade que seu negócio exige com a leveza criativa que ele merece. Traduzo a essência de empreendedores em designs minimalistas e ousados, criando uma identidade visual sólida para destacar sua marca no mercado.",
+        "foto_perfil" : "assets/image/perfil_fotografo.jpg"
+    },
+    "resume" : {
+        "educacao" : [
+            {
+                "ano" : "2020 - 2023",
+                "curso" : "Design Gráfico",
+                "instituicao" : "Universidade XYZ",
+                "descricao" : "Bacharelado em Design Gráfico com foco em comunicação visual, branding e design digital."
+                
+            },
+            {
+                "ano" : "2022",
+                "curso" : "Fotografia Digital",
+                "instituicao" : "Workshop / Escola Y",
+                "descricao" : "Bacharelado em Design Gráfico com foco em comunicação visual, branding e design digital."
+            },
+            {
+                "ano" : "2021",
+                "curso" : "Design Gráfico",
+                "instituicao" : "Autodidata / Cursos livres",
+                "descricao" : "Estudo de tipografia, teoria das cores e ferramentas de design como Adobe Photoshop, Illustrator e InDesign."
+            }
+        ],
+        "experiencia" : [
+            {
+                "ano" : "Atual",
+                "funcao" : "Freelancer",
+                "empresa" : "Autônomo",
+                "descricao" : "Desenvolvimento de projetos de design gráfico e web design para clientes diversos, incluindo criação de logotipos, identidade visual e websites responsivos."
+                
+            },
+            {
+                "ano" : "Projeto",
+                "funcao" : "E-commerce de Moda",
+                "empresa" : "Projeto Pessoal",
+                "descricao" : "Criação de uma loja online para venda de roupas e acessórios, com foco em design atraente e experiência do usuário."
+            },
+            {
+                "ano" : "2020 - 2022",
+                "funcao" : "Gestão de Redes Sociais",
+                "empresa" : "Empresa Anterior",
+                "descricao" : "Gerenciamento das redes sociais da empresa, incluindo criação de conteúdo visual, planejamento de campanhas e análise de métricas para aumentar o engajamento e a visibilidade da marca."
+            }
+        ]
+    },
+    "portifolio" : [
+        {
+            "titulo" : "Calc Gorjetas",
+            "categoria" : "web",
+            "imagem" : "./assets/image/portfolio/calc-gorjetas.png",
+            "sub" : "Calculadora de Gorjetas",
+            "descricao" : "Desenvolvimento de uma aplicação web simples para calcular gorjetas em restaurantes, com design intuitivo e responsivo.",
+            "link" : "https://eltnas.github.io/calc-gorjetas/"
+        },{
+            "titulo" : "Culinaria",
+            "categoria" : "web",
+            "imagem" : "./assets/image/portfolio/Culinaria.webp",
+            "sub" : "Site de Receitas",
+            "descricao" : "Desenvolvimento de um site de receitas culinárias com design atraente e funcionalidade de busca.",
+            "link" : "https://eltnas.github.io/culinaria/"
+        },{
+            "titulo" : "IMC Calculator",
+            "categoria" : "web",
+            "imagem" : "./assets/image/portfolio/imc-calc.png",
+            "sub" : "Calculadora de IMC",
+            "descricao" : "Desenvolvimento de uma aplicação web simples para calcular o Índice de Massa Corporal (IMC), com design intuitivo e responsivo.",
+            "link" : "https://eltnas.github.io/imc-calculator/"
+        },{
+            "titulo" : "Jogo da Velha",
+            "categoria" : "web",
+            "imagem" : "./assets/image/portfolio/Tic-Tac-Toe.webp",
+            "sub" : "Jogo da Velha",
+            "descricao" : "Desenvolvimento de uma aplicação web simples para jogar Jogo da Velha, com design intuitivo e responsivo.",
+            "link" : "https://eltnas.github.io/jogo-da-velha/"
+        },{
+            "titulo" : "Jokenpo",
+            "categoria" : "web",
+            "imagem" : "./assets/image/portfolio/rock-papper-scisor.png",
+            "sub" : "Jokenpo",
+            "descricao" : "Desenvolvimento de uma aplicação web simples para jogar Jokenpo, com design intuitivo e responsivo.",
+            "link" : "https://eltnas.github.io/jokenpo/"
+        },{
+            "titulo" : "Marvel",
+            "categoria" : "web",
+            "imagem" : "./assets/image/portfolio/Marvel.webp",
+            "sub" : "Marvel",
+            "descricao" : "Desenvolvimento de uma aplicação web simples para explorar o universo Marvel, com design intuitivo e responsivo.",
+            "link" : "https://eltnas.github.io/marvel/"
+        },{
+            "titulo" : "Mata Insetos",
+            "categoria" : "web",
+            "imagem" : "./assets/image/portfolio/mata-insetos.png",
+            "sub" : "Mata Insetos",
+            "descricao" : "Desenvolvimento de um jogo web simples para matar insetos, com design intuitivo e responsivo.",
+            "link" : "https://eltnas.github.io/mata-insetos/"
+        },{
+            "titulo" : "Pedra Papel e Tesoura",
+            "categoria" : "web",
+            "imagem" : "./assets/image/portfolio/Tic-Tac-Toe.webp",
+            "sub" : "Pedra Papel e Tesoura",
+            "descricao" : "Desenvolvimento de uma aplicação web simples para jogar Pedra Papel e Tesoura, com design intuitivo e responsivo.",
+            "link" : "https://eltnas.github.io/pedra-papel-tesoura/"
+        },{
+            "titulo" : "Desenvolvimento de sistemas",
+            "categoria" : "design",
+            "imagem" : "./assets/image/portfolio/landing_page.webp",
+            "sub" : "Desenvolvimento de sistemas",
+            "descricao" : "Criação de landing pages e interfaces para sistemas web, focando na experiência do usuário e na estética visual.",
+            "link" : "https://eltnas.github.io/marvel/"
+        },{
+            "titulo" : "Startup Tech",
+            "categoria" : "foto",
+            "imagem" : "./assets/image/portfolio/startup_tech.webp",
+            "sub" : "Startup Tech",
+            "descricao" : "Sessão de fotos para uma startup de tecnologia, capturando a essência inovadora e dinâmica da empresa.",
+            "link" : "https://eltnas.github.io/startup-tech/"
+        },{
+            "titulo" : "Marca de Roupas",
+            "categoria" : "foto",
+            "imagem" : "./assets/image/portfolio/marca_de_roupas.webp",
+            "sub" : "Marca de Roupas",
+            "descricao" : "Sessão de fotos para uma marca de roupas, destacando o estilo e a identidade da marca.",
+            "link" : "https://eltnas.github.io/marca-roupas/"
+        }
+    ]
+}

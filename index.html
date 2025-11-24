@@ -13,416 +13,46 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/style/style.css" />
 
-    <!-- icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" />
+    <!-- icons e fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id="top_bar">
-        <div class="banner">
-            <div class="banner-img">
-                <img src="./assets/image/coding.png" alt="Coding" />
+    <section class="card-container" id="home">
+        
+        <section class="text-content">
+            <span class="greeting">Olá, mundo!</span>
+            <h1>Sou o
+                <br /><span class="outline-text" id="home-nome">Elton Nascimento</span></h1>
+            
+            <div class="role-badge">
+                <span class="typed-role" data-typed-items="Desenvolvedor Full Stack, Fotografo Amador "></span>
             </div>
-            <div class="banner-nome">
-                <h3>Elton C. Nascimento</h3>
-            </div>
-        </div>
+            
+            <p class="description"></p>
+            
+            <a href="./about.html" class="btn-primary">Me conheça</a>
+        </section>
 
-        <nav class="nav-menu-desktop">
-            <ul class="nav-menu">
-                <li class="menu-itens" data-id="pageHome">Home</li>
-                <li class="menu-itens" data-id="pageAboutMe">Sobre</li>
-                <li class="menu-itens" data-id="pagePortifolio">Portifólio</li>
-                <li class="menu-itens" data-id="pageTechs">Serviços</li>
-                <li class="menu-itens" data-id="pageResumo">Resumo</li>
-                <li class="menu-itens" data-id="pageContact">Contato</li>
-            </ul>
-        </nav>
-        <nav class="nav-menu-mobile">
-            <span class="icon-menu" onclick="showHiddeMenuMobile('show')"></span>
-            <div class="menu-mobile">
-                <span class="icon-close" onclick="showHiddeMenuMobile('hiden')"></span>
+        <aside class="visual-content">
+
+            <img src="./assets/image/perfil_fotografo.jpg" alt="Foto do Fotógrafo" class="hero-img">
+
+            <nav class="sidebar-nav">
                 <ul>
-                    <li class="menu-itens" on onclick="changeSection('pageHome')">Home</li>
-                    <li class="menu-itens" on onclick="changeSection('pageAboutMe')">Sobre</li>
-                    <li class="menu-itens" on onclick="changeSection('pagePortifolio')">Portifólio</li>
-                    <li class="menu-itens" on onclick="changeSection('pageTechs')">Serviços</li>
-                    <li class="menu-itens" on onclick="changeSection('pageResumo')">Resumo</li>
-                    <li class="menu-itens" on onclick="changeSection('pageContact')">Contato</li>
+                    <li><a href="./index.html"><i class="fas fa-home active"></i></a></li>
+                    <li><a href="./about.html"><i class="fas fa-user"></i></a></li>
+                    <li><a href="./resume.html"><i class="fas fa-briefcase"></i></a></li>
+                    <li><a href="./portfolio.html"><i class="fas fa-image"></i></a></li>
+                    <li><a href="./contact.html"><i class="fas fa-paper-plane"></i></a></li>
                 </ul>
-            </div>
-
-        </nav>
-    </div>
-
-<!-- Home -->
-<section id="pageHome" class="pageBox">
-    <div id="pageHome_content">
-        <div class="box_content">
-            <div class="welcome">
-                <div class="desc">
-                    <p>Olá, eu sou</p>
-                    <h3><span class="typed_function" data-typed-items="Desenvolvedor Fullstack, Fotográfo Amador, Jogador de WoW"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></h3>
-                    <p>Seja bem vindo ao meu website!</p>
-
-                    <div class="box-btn">
-                        <button id="btnAboutMe" onclick="goToPage('pageAboutMe')">Me Conheça</button>
-                        <button id="myResume" onclick="dowloadResume()">Meu Curriculo</button>
-                    </div>
-
-                </div>
-                <div class="social">
-                    <nav class="social-bar">
-                        <ul class="social-list">
-                            <li class="link" id="social-facebook" onclick="toSocialPage(face)"><span class="icon-social-facebook"></span></li>
-                            <li class="link" id="social-linkedin" onclick="toSocialPage(linkedin)"><span class="icon-social-linkedin"></span></li>
-                            <li class="link" id="social-insta" onclick="toSocialPage(instagram)"><span class="icon-social-instagram"></span></li>
-                            <li class="link" id="social-user" onclick="toSocialPage(pessoal)"><span class="icon-user"></span></li>
-                        </ul>
-                    </nav>
-
-                </div>
-            </div>
-            <div class="dev-img">
-                <img src="./assets/image/dev_elton.png" alt="Desenvolvedor homem" />
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- AboutMe -->
-<section id="pageAboutMe" class="pageBox">
-    <div class="box-apres">
-        <div class="apres-img">
-            <img src="./assets/image/perfil.jpg" alt="Elton C. Nascimento">
-        </div>
-        <div class="apres">
-            <h2>Elton <span>Nascimento</span></h2>
-            <p class="apres-text">Olá, me chamo Elton Nascimento, sou de Belo Horizonte, MG. Estudante de Ciencias da Computação pela faculdade Descomplica, sou apaixonado por tecnologias e desenvolvimento.</p>
-        </div>
-    </div>
-
-    <div class="box-skills">
-        <div class="box-title">
-            <h1>Minhas <span>skills</span></h1>
-        </div>
-        <div class="skills">
-            <ul class="skill-items">
-                <li class="skill-item">
-                    <div class="item-title">
-                        <p>HTML</p>
-                    </div>
-                    <div class="item-lvl">
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl"></div>
-                    </div>
-                </li>
-                <li class="skill-item">
-                    <div class="item-title">
-                        <p>CSS</p>
-                    </div>
-                    <div class="item-lvl">
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl"></div>
-                        <div class="lvl"></div>
-                    </div>
-                </li>
-                <li class="skill-item">
-                    <div class="item-title">
-                        <p>Javascript</p>
-                    </div>
-                    <div class="item-lvl">
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl"></div>
-                        <div class="lvl"></div>
-                    </div>
-                </li>
-                <li class="skill-item">
-                    <div class="item-title">
-                        <p>Python</p>
-                    </div>
-                    <div class="item-lvl">
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl"></div>
-                        <div class="lvl"></div>
-                    </div>
-                </li>
-                <li class="skill-item">
-                    <div class="item-title">
-                        <p>Java</p>
-                    </div>
-                    <div class="item-lvl">
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl"></div>
-                    </div>
-                </li>
-                <li class="skill-item">
-                    <div class="item-title">
-                        <p>React</p>
-                    </div>
-                    <div class="item-lvl">
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl"></div>
-                        <div class="lvl"></div>
-                    </div>
-                </li>
-                <li class="skill-item">
-                    <div class="item-title">
-                        <p>Postgres</p>
-                    </div>
-                    <div class="item-lvl">
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl"></div>
-                    </div>
-                </li>
-                <li class="skill-item">
-                    <div class="item-title">
-                        <p>Mysql</p>
-                    </div>
-                    <div class="item-lvl">
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl lvl-on"></div>
-                        <div class="lvl"></div>
-                        <div class="lvl"></div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- Portfolio -->
-<section id="pagePortifolio" class="pageBox">
-    <div class="container-top">
-        <div class="title-box">
-            <h2>Meu <span>Portifólio</span></h2>
-        </div>
-        <div class="subTitle-box">
-            <p>Projetos que eu já desenvolvi</p>
-        </div>
-    </div>
-    <div class="box-portifolio">
-        <div class="box-cat">
-            <ul class="cat-list">
-                <li class="btn-cat on-btn">Todos</li>
-                <li class="btn-cat">HTML</li>
-                <li class="btn-cat">Python</li>
-            </ul>
-        </div>
-
-        <div class="portifolio" id="portifolio-box">
-
-        </div>
-    </div>
-</section>
-<!-- Techs -->
-<section id="pageTechs" class="pageBox">
-    <div class="container-top">
-        <div class="title-box">
-            <h2>Serviços <span>que ofereço</span></h2>
-        </div>
-    </div>
-
-    <div class="box-techs">
-        <div class="techs-list">
-            <div class="techs-item">
-                <div class="techs-img">
-                    <img src="./assets/image/desenvolvimento-frontend.png" alt="Desenvolvimento Front-end">
-                </div>
-                <div class="techs-title">
-                    <h3>Desenvolvimento Front-end</h3>
-                    <ul>
-                        <li>Criação de interfaces de usuário (UI)</li>
-                        <li>Desenvolvimento Mobile</li>
-                        <li>Implementação de designs</li>
-                        <li>Acessibilidade e SEO</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="techs-item">
-                <div class="techs-img">
-                    <img src="./assets/image/programador-de-backend.png" alt="Programador de Backend">
-                </div>
-                <div class="techs-title">
-                    <h3>Programador Backend</h3>
-                    <ul>
-                        <li>Construção de APIs</li>
-                        <li>Gerenciamento de banco de dados</li>
-                        <li>Trabalho com frameworks/backend</li>
-                        <li>Integração com serviços externos</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="techs-item">
-                <div class="techs-img">
-                    <img src="./assets/image/devops.png" alt="Infraestrutura e DevOps">
-                </div>
-                <div class="techs-title">
-                    <h3>Infraestrutura e DevOps</h3>
-                    <ul>
-                        <li>Deploy de aplicações</li>
-                        <li>Gerenciamento de servidores</li>
-                        <li>Configuração de CI/CD</li>
-                        <li>Manutenção de infraestrutura</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="techs-item">
-                <div class="techs-img">
-                    <img src="./assets/image/gerenciamento-de-projetos.png" alt="Gerenciamento de Projetos">
-                </div>
-                <div class="techs-title">
-                    <h3>Consultoria e Arquitetura de Software</h3>
-                    <ul>
-                        <li>Escolha de tecnologias</li>
-                        <li>Planejamento de arquitetura</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="techs-item">
-                <div class="techs-img">
-                    <img src="./assets/image/architechture.png" alt="Integração e Gerenciamento de Projetos">
-                </div>
-                <div class="techs-title">
-                    <h3>Integração e Gerenciamento de Projetos</h3>
-                    <ul>
-                        <li>Escolha de tecnologias</li>
-                        <li>Planejamento de arquitetura</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Contato -->
-<section id="pageResumo" class="pageBox">
-    <div class="container-top">
-        <div class="title-box">
-            <h2>Experiência <span>Profissionais</span></h2>
-        </div>
-    </div>
-
-    <div class="box-resumo">
-        <div class="resumo-name">
-            <h2>Elton Carlos do <span>Nascimento</span></h2>
-            <p>Desenvolvedor Fullstack apaixonado por tecnologia e orientado por prazos, com mais de 1 anos de experiência projetando e desenvolvendo interfaces, desde o conceito inicial até a entrega final.</p>
-
-        </div>
-
-        <div class="resumo">
-            <div class="resumo-item">
-                <div class="item">
-                    <h3>Educação</h3>
-                    <ul>
-                        <li>
-                            <span>Descomplica - Faculdade de Tecnologia</span>
-                            <div class="resumo-item-date">
-                                <p><span class="resume-date">2023 - 2027</span> Ciencia da Computação</p>
-                            </div>
-                            <div class="resumo-item-desc">
-                                <p>O curso de Ciencia da Computação oferece uma abordagem prática e abrangente para o desenvolvimento de sistemas de software, combinando teoria e prática para formar profissionais qualificados e preparados para os desafios da indústria</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <span>DIO.me - Digital Innovation One</span>
-                            <div class="resumo-item-date">
-                                <p><span class="resume-date">2023 - 2023</span> Fullstack Developer</p>
-                            </div>
-                            <div class="resumo-item-desc">
-                                <p>Curso de Fullstack Developer usando o framework AngularJS e Java.</p>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="item">
-                    <h3>Experiência Profissional</h3>
-                    <ul>
-                        <li>
-                            <span>RentCar</span>
-                            <div class="resumo-item-date">
-                                <p><span class="resume-date">2023 - 2025</span> Team Leader</p>
-                            </div>
-                            <div class="resumo-item-desc">
-                                <ul>
-                                    <li>Orientação da equipe em relação a metas.</li>
-                                    <li>Supervisão do desempenho dos integrantes da equipe.</li>
-                                    <li>Planejamento de metas e prazos para a equipe.</li>
-                                    <li>Resolução de problemas para melhor desenvolvimento do projeto.</li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <span>Zin Software</span>
-                            <div class="resumo-item-date">
-                                <p><span class="resume-date">2017 - Atual</span> Desenvolvedor de Sistemas</p>
-                            </div>
-                            <div class="resumo-item-desc">
-                                <ul>
-                                    <li>Atuação em inumeros projetos para os mais variados nichos de mercado.</li>
-                                    <li>Gerenciei até 5 projetos ou tarefas simultaneamente</li>
-                                    <li>Recomendei e prestei consultoria para clientes sobre softwares mais apropriados.</li>
-                                    <li>Criei apresentações e propostas de design para clientes e gerentes de contas.</li>
-                                </ul>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-
-
-
-        </div>
-    </div>
-</section>
-    <section id="pageContact" class="pageBox">
-        <div class="container-top">
-            <div class="title-box">
-                <h2>Formulário de <span>Contato</span></h2>
-            </div>
-        </div>
-
-        <div class="box-contact">
-            <div class="contact-form">
-                <form action="https://formsubmit.co/eltnas@outlook.com" method="POST">
-                    <input type="text" name="name" placeholder="Nome" required>
-                    <input type="email" name="email" placeholder="E-mail" required>
-                    <textarea name="message" placeholder="Mensagem" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </div>
+            </nav>
+        </aside>
     </section>
 
 <footer>
     <p>Desenvolvido por <a href="https://eltnas.github.io/">Elton C. Nascimento</a></p>
 </footer>
-    <script src="assets/scripts/redeSocial.js"></script>
-    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/main.js"></script>
 </body>
 </html>
